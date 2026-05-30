@@ -1,0 +1,58 @@
+# =============================================================================
+# VNB4-Toeic-backend — NestJS 10 + BullMQ + Prisma (.gitignore)
+# =============================================================================
+
+# Node / pnpm
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.turbo/
+
+# Prisma (client generated at install/postinstall; schema is a symlink → database)
+api/prisma/migrations/
+.prisma/
+
+# Env
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage / test
+coverage/
+.nyc_output/
+*.lcov
+
+# Nest
+.nyc_output
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# AI/agent tooling temp (oh-my-claudecode, gstack, code-review)
+.omc/
+.gstack/
+.review/
+.claude/
+*.tmp

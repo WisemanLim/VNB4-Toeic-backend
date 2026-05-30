@@ -1,0 +1,26 @@
+{
+  "name": "@vnb4-toeic/worker",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "BullMQ worker for TTS batch + media pipelines",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "start:dev": "tsx watch src/main.ts"
+  },
+  "dependencies": {
+    "bullmq": "^5.13.0",
+    "ioredis": "^5.4.1",
+    "@prisma/client": "^5.20.0",
+    "@aws-sdk/client-s3": "^3.658.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.40.0",
+    "dotenv": "^16.4.0",
+    "pino": "^9.5.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0"
+  }
+}

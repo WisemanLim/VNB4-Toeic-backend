@@ -1,0 +1,20 @@
+{
+  "name": "@vnb4-toeic/backend",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": ["api", "worker", "shared"],
+  "scripts": {
+    "prisma:generate": "pnpm --filter @vnb4-toeic/api prisma:generate",
+    "build": "pnpm prisma:generate && pnpm -r build",
+    "start:dev:api": "pnpm --filter @vnb4-toeic/api start:dev",
+    "start:dev:worker": "pnpm --filter @vnb4-toeic/worker start:dev",
+    "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0"
+  },
+  "engines": {
+    "pnpm": ">=10"
+  }
+}

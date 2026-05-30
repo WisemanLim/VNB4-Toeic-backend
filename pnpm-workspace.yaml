@@ -1,0 +1,11 @@
+packages:
+  - api
+  - worker
+  - shared
+
+# pnpm 11+: settings live here (formerly package.json pnpm.*). See https://pnpm.io/settings
+#
+# 알려진 native deps (prisma, argon2, esbuild, msgpackr-extract, @nestjs/core, ...) 의
+# install/postinstall 모두 허용. dev 환경 + 표준 OSS dep 한정이므로 안전.
+# 새 dep 추가 시 pnpm-lock.yaml 변경분 리뷰 필수.
+dangerouslyAllowAllBuilds: true
