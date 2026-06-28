@@ -26,7 +26,7 @@ backend/
 
 | PRD area | Location |
 |---|---|
-| §1.3 Authentication (Google/Apple/Kakao/Email+OTP) | `api/src/modules/auth` |
+| §1.3 Authentication (Google/Apple/Kakao/Email+OTP) | `api/src/modules/auth` — currently implemented: **Email (password)** + **Google OAuth**. Apple/Kakao/OTP not implemented (deps only) |
 | §1.3 Word cards / example sentences / images | `api/src/modules/words` + `lessons` |
 | §1.3 SRS review queue / progress | `api/src/modules/progress` (SM-2) |
 | §1.3 TTS batch | `api/src/modules/tts` + `worker/src/jobs/tts.job.ts` |
@@ -73,4 +73,4 @@ DATABASE_URL, REDIS_*, OAuth/TTS keys → `.env` (see `.env.example`).
 ## Open-source fork strategy
 
 Used only as a dependency. No separate fork repo → no license trigger.
-All npm dependencies are MIT / Apache-2.0 / BSD. Argon2 (LGPL-3.0) is dynamically linked → no impact. Details in [LICENSES.md](../LICENSES.md).
+All npm dependencies are MIT / Apache-2.0 / BSD. Argon2 (LGPL-3.0) is dynamically linked → no impact. Details in [LICENSES.md](../VNB4-Toeic-ops/LICENSES.md).

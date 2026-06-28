@@ -26,7 +26,7 @@ backend/
 
 | PRD 영역 | 위치 |
 |---|---|
-| §1.3 인증 (Google/Apple/Kakao/Email+OTP) | `api/src/modules/auth` |
+| §1.3 인증 (Google/Apple/Kakao/Email+OTP) | `api/src/modules/auth` — 현재 구현: **Email(비밀번호)** + **Google OAuth**. Apple/Kakao/OTP 미구현(deps만 존재) |
 | §1.3 단어카드/예문/이미지 | `api/src/modules/words` + `lessons` |
 | §1.3 SRS 복습큐/진도 | `api/src/modules/progress` (SM-2) |
 | §1.3 TTS 배치 | `api/src/modules/tts` + `worker/src/jobs/tts.job.ts` |
@@ -73,4 +73,4 @@ DATABASE_URL, REDIS_*, OAuth/TTS keys → `.env` (see `.env.example`).
 ## Open-source fork strategy
 
 Dependency 형태로만 사용. 별도 fork repo 없음 → 라이선스 트리거 없음.
-모든 npm 의존성 MIT / Apache-2.0 / BSD. Argon2 (LGPL-3.0)는 동적링크 → 영향 없음. 상세 [LICENSES.md](../LICENSES.md).
+모든 npm 의존성 MIT / Apache-2.0 / BSD. Argon2 (LGPL-3.0)는 동적링크 → 영향 없음. 상세 [LICENSES.md](../VNB4-Toeic-ops/LICENSES.md).
